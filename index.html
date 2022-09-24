@@ -20,15 +20,55 @@
             <div class="hero-footer"><a target="_blank" href="https://unsplash.com/photos/25xggax4bSA">Photo by Halie West</a></div>
         </div>
         <div class="right-part">
-            <div class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Molestiae ab temporibus amet quas aperiam officia, vitae totam similique animi numquam consequuntur odio facere, 
-                aspernatur illum quis iusto error qui quod?</div>
-            <div class="signup-form">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Molestiae ab temporibus amet quas aperiam officia, vitae totam similique animi numquam consequuntur odio facere, 
-                aspernatur illum quis iusto error qui quod?</div>
-            <div class="button-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Molestiae ab temporibus amet quas aperiam officia, vitae totam similique animi numquam consequuntur odio facere, 
-                aspernatur illum quis iusto error qui quod?</div>
+            <div class="main-text">
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae ab temporibus amet quas aperiam officia, vitae totam similique animi numquam consequuntur odio facere,
+                    aspernatur illum quis iusto error qui quod?
+                </div>
+            </div>
+            <div class="signup-form">
+                <form action="#" method="post">
+                    <div class="left-form">
+                        <label for="user_first_name">First Name:</label>
+                        <br/>
+                        <input type="text" id="user_first_name" name="first_name" required>
+                        <br/>
+
+                        <label for="user_email">Email Address:</label>
+                        <br/>
+                        <input type="email" id="user_email" name="email" required> 
+                        <br/>
+
+                        <label for="user_password"  data-help="Should be 8 symbols at least.">Password:</label>
+                        <br/>
+                        <input type="password" id="user_password" name="password" required minlength="8">
+                        <br/>
+                        <button type="submit">Sign Up</button>
+                    </div>
+
+                    <div class="right-form">
+                        <label for="user_last_name">Last Name:</label>
+                        <br/>
+                        <input type="text" id="user_last_name" name="last_name" required>
+                        <br/>
+
+                        <label for="user_phone">Phone Number:</label>
+                        <br/>
+                        <input type="text" id="user_phone" name="phone" required> 
+                        <br/>
+
+                        <label for="user_password">Confirm Password:</label>
+                        <br/>
+                        <input type="password" id="user_password" name="password" required minlength="8">
+                        <br/>
+                    </div>
+              </form>
+            </div>
+            <div class="button-container">
+                <button type="submit">Sign Up</button>
+                <div>Already have an account? Sign in.</div>
+            </div>
         </div>
     </div>
 </body>

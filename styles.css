@@ -29,6 +29,7 @@ a:hover {
 
 .wrapper {
     display: flex;
+    gap: 2rem;
     height: 100vh;
 }
 
@@ -40,10 +41,11 @@ a:hover {
     background-size: cover;
     width: 600px;
     height: 100vh;
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.33);
 }
 
 .right-part {
-    flex: 1 1 0;
+    flex: 1 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -76,4 +78,41 @@ img[alt="Odin Logo"] {
     align-self: center;
 }
 
+.right-part>* {
+    background-color: rgba(65, 65, 65, 0.68);
+    width: 90%;
+    min-width: 315px;
+    height: 30%;
+    box-shadow: 2px 3px 3px 2px rgb(32, 32, 32);
+    border-radius: 32px;
+}
+
+form {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    gap: 3rem;
+}
+
+input {
+    color: var(--gray);
+    background-color: rgba(65, 65, 65, 0.68);
+    border: 1px solid rgb(52, 51, 59);
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+}
+
+ :focus {
+    background-color: rgba(16, 16, 16, 0.68);
+    outline: 2px solid var(--green);
+}
+
+input::after:invalid {
+    outline: 2px solid red;
+}
+
+input:valid {
+outline: 2px solid green;
+}
 
