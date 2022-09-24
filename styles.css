@@ -2,5 +2,26 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-color: rgb(101, 101, 95);
+    background-color: rgb(120, 120, 106);
+    --green: #596D48;
+    --gray: #E5E7EB;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.left-part {
+    background-image: url("/images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    width: 600px;
+    flex-direction: column;
+}
+
+.right-part {
+    flex: 1 1 0;
+    flex-direction: column;
 }
