@@ -7,8 +7,9 @@
     --dark-gray: rgb(52, 51, 59);
     width: 100vw;
     max-width: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-family: Inconsolata, 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
     background-color: var(--dark-gray);
     color: var(--gray);
 }
@@ -18,9 +19,19 @@
     src: url(/fonts/Norse-Bold.otf);
 }
 
+@font-face {
+    font-family: Inconsolata;
+    src: url(/fonts/Inconsolata);
+}
+
 a {
+    font-weight: normal;
     text-decoration: none;
     color: var(--gray);
+}
+
+a[href="#"] {
+    color: var(--green);
 }
 
 a:hover {
@@ -82,13 +93,24 @@ img[alt="Odin Logo"] {
     background-color: rgba(65, 65, 65, 0.68);
     width: 90%;
     min-width: 315px;
-    height: 30%;
+    height: 42%;
     box-shadow: 2px 3px 3px 2px rgb(32, 32, 32);
     border-radius: 32px;
 }
 
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.text {
+    margin: 2rem 3rem;
+}
+
 form {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 3rem;
     display: flex;
     gap: 3rem;
@@ -100,15 +122,15 @@ input {
     border: 1px solid rgb(52, 51, 59);
     outline: none;
     border-radius: 6px;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
- :focus {
+input:focus {
     background-color: rgba(16, 16, 16, 0.68);
     outline: 2px solid var(--green);
 }
 
-input::after:invalid {
+input:invalid {
     outline: 2px solid red;
 }
 
@@ -116,3 +138,16 @@ input:valid {
 outline: 2px solid green;
 }
 
+label {
+    line-height: 1.5;
+}
+
+button {
+    color: var(--gray);
+    font-weight: bold;
+    background-color: var(--green);
+    border-radius: 6px;
+    border-style: none;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1.5rem;
+}
