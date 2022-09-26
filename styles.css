@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: Nordic;
-    src: url(/fonts/Norse-Bold.otf);
+    src: url(fonts/Norse-Bold.otf);
 }
 
 @font-face {
     font-family: Inconsolata;
-    src: url(/fonts/Inconsolata);
+    src: url(fonts/Inconsolata);
 }
 
 a {
@@ -47,7 +47,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("/images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     width: 600px;
     height: 100vh;
